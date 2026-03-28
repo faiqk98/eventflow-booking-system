@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventFlow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>EventFlow</h1>
+      <p>Browse and book university workshops, seminars, and campus events.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <h2>Available Events</h2>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search events by name..."
+      />
+    </section>
+
+    <section id="events" class="events-grid"></section>
+
+    <section class="booking-section">
+      <h2>Book an Event</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="eventSelect">Select Event</label>
+          <select id="eventSelect" required>
+            <option value="">Select an event</option>
+          </select>
+        </div>
+
+        <button type="submit">Book Now</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
